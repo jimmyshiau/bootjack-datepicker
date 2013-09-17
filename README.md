@@ -29,7 +29,7 @@ First of all in your HTML file, you need to include the CSS resource:
 	</head>
 
 ###Embedded calendar
-To create a calendar component to your HTML page, add class="calendar" to the element you want to attach to (most typically this would be the <div>).
+To create a calendar component to your HTML page, add *class="calendar"* to the element you want to attach to (most typically this would be the '<div>').
 	<div class="calendar" data-date="2013/09/16" data-format="yyyy/MM/dd"></div>
 	
 Then call the following global registration in Dart:
@@ -39,8 +39,8 @@ Then call the following global registration in Dart:
 	}
 	
 ###Datepicker
-Using a calendar component in a dropdown div as a date picker component, add class="calendar" to the element you want to attach to, 
-then add the data-target attribute with the ID or class of the element that you want to display the date value.
+Using a calendar component in a dropdown div as a date picker component, add *class="calendar"* to the element you want to attach to, 
+then add the *data-target* attribute with the ID or class of the element that you want to display the date value.
 	<div class="input-group">
 		
 	  <input id="inp" type="text" class="form-control">
