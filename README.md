@@ -25,12 +25,12 @@ First of all in your HTML file, you need to include the CSS resource:
   
 	<head>
 		...
-		<link rel="stylesheet" href="packages/bootjack_datepicker/css/bootjack_datepicker.min.css">
+		<link rel="stylesheet" href="packages/bootjack_datepicker/css/bootjack-datepicker.min.css">
 	</head>
 
 ###Embedded calendar
 
-	<div data-picker="calendar" data-date="2013/09/16" data-date-format="yyyy/MM/dd"></div>
+	<div class="calendar" data-date="2013/09/16" data-format="yyyy/MM/dd"></div>
 	
 With the following global registration in Dart:
 
@@ -40,19 +40,20 @@ With the following global registration in Dart:
 	
 ###Datepicker
 
-	<div class="input-group" data-picker="datepicker" 
-	  data-date="2013/09/16" data-date-format="yyyy/MM/dd">
+	<div class="input-group">
 		
-	  <input type="text" class="form-control">
+	  <input id="inp" type="text" class="form-control">
 	  
 	  <span class="input-group-btn">
 		
-		<button class="btn btn-default dropdown-toggle" type="button" 
+		<button id="btn" class="btn btn-default dropdown-toggle" type="button" 
 		  data-toggle="dropdown" data-target="#">
 		  <span class="glyphicon glyphicon-calendar"></span>
 		</button>
 		
 		<div class="dropdown-menu" >
+			<div class="calendar" data-date="2013/09/16" data-format="yyyy/MM/dd"
+				data-target="#inp" data-toggletarget="#btn"></div>
 		</div>
 		
 	  </span>
@@ -61,7 +62,7 @@ With the following global registration in Dart:
 With the following global registration in Dart:
 
 	void main() {
-		Datepicker.use();
+		Calendar.use();
 	}
 	
 Check more [examples](https://github.com/rikulo/bootjack-datepicker/tree/master/example).
