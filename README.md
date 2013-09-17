@@ -29,7 +29,7 @@ First of all in your HTML file, you need to include the CSS resource:
 	</head>
 
 ###Embedded calendar
-To create a calendar component to your HTML page, add **class="calendar"** to the element you want to attach to (most typically this would be the `<div>`).
+To create a calendar component to your HTML page, add `class="calendar"` to the element you want to attach to (most typically this would be the `<div>`).
 	
 	<div class="calendar" data-date="2013/09/16" data-format="yyyy/MM/dd"></div>
 	
