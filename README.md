@@ -49,8 +49,8 @@ then add the `data-target` attribute with the ID or class of the element that yo
 	  
 	  <span class="input-group-btn">
 		
-		<button id="btn" class="btn btn-default dropdown-toggle" type="button" 
-		  data-toggle="dropdown" data-target="#">
+		<button id="btn" class="btn btn-default dropdown-toggle" 
+			type="button" data-toggle="dropdown">
 		  <span class="glyphicon glyphicon-calendar"></span>
 		</button>
 		
